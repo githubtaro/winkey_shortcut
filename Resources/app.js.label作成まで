@@ -1,0 +1,28 @@
+// タブ（問題部分，解答まとめ部分）
+var tabGroup = Ti.UI.createTabGroup();
+
+var win1 = Ti.UI.createWindow({  
+    title:'Tab 1',
+    backgroundColor:'blue'
+});
+var win2 = Ti.UI.createWindow({  
+    title:'Tab 2',
+    backgroundColor:'red'
+});
+
+var tab1 = Ti.UI.createTab({  
+    icon:'KS_nav_views.png',
+    title:'Tab 1',
+    window:win1
+});
+var tab2 = Ti.UI.createTab({  
+    icon:'KS_nav_ui.png',
+    title:'Tab 2',
+    window:win2
+});
+
+tabGroup.addTab(tab1);
+tabGroup.addTab(tab2);
+tabGroup.open();
+
+
